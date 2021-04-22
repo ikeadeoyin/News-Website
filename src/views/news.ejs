@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything articles for Devs</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__logo"><h1>Dev Articles</h1></div>
+        <div class="header__search"><h3>Search</h3></div>
+    </header>
+    <div class="container">
+        <div class="news">
+            <% articles.forEach(article =>{ %>
+                <div class="news__card">
+                    <img src="<%-article.cover_image %>" alt="<%- article.title %>">
+                    <h3><%- article.title %> </h3>
+                <p><%- article.description %> </p>
+                </div>    
+            <% }) %> 
+        </div>
+    </div>
+
+     
+
+
+
+   
+</body>
+</html>
