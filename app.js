@@ -1,8 +1,9 @@
+require ("dotenv").config()
 const express = require("express");
 const newsRouter = require("./src/routes/news");
 // const newsRouter = require(newsRouter)
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 // static files
 app.use(express.static("public"));
